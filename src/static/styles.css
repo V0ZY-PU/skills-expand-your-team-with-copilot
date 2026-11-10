@@ -190,6 +190,68 @@ section h3 {
   justify-content: center;
 }
 
+.activity-card.shared-activity {
+  border-color: var(--primary);
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+.activity-sharing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.sharing-label,
+.sharing-status,
+.sharing-manual-link {
+  width: 100%;
+}
+
+.sharing-label {
+  font-weight: bold;
+}
+
+.activity-sharing .share-link {
+  display: inline-block;
+  padding: 6px 8px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  background-color: var(--surface);
+  color: var(--primary);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.activity-sharing .share-link:hover {
+  background-color: var(--primary);
+  color: var(--primary-text);
+}
+
+.activity-sharing .share-link:focus-visible,
+.sharing-manual-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.activity-sharing .sharing-status {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.sharing-status:empty {
+  display: none;
+}
+
+.sharing-manual-link {
+  min-width: 0;
+  padding: 6px;
+}
+
 /* Activity Tag */
 .activity-tag {
   position: absolute;
